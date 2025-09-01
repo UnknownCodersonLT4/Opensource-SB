@@ -82,7 +82,7 @@ async def spam_cmd(ctx, *, message):
         try:
             while ctx.channel.id in spam_tasks:
                 await ctx.send(message)
-                await asyncio.sleep(0.01)
+                await asyncio.sleep(0.010)
         except Exception as e:
             print(f"Spam error: {e}")
         finally:
