@@ -169,7 +169,7 @@ async def an_cmd(ctx, *, message):
     try:
         await ctx.message.delete()
         await asyncio.sleep(0.5)
-        await ctx.send(f"📨 Anonymous Message: {message}")
+        await ctx.send(f" Anonymous Message: {message}")
     except:
         pass
 
