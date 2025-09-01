@@ -23,7 +23,7 @@ prefixes = {}
 @bot.command(name='help')
 async def custom_help(ctx):
     help_text = """
-**SelfBot Help Menu**
+**MADE BY SLAYERSON NIGGA!**
 `+help` 
 
 **Messaging Commands:**
