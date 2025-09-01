@@ -1,4 +1,6 @@
-```python
+#
+# MADE BY SLAYERSON
+#
 import discord
 from discord.ext import commands
 import asyncio
@@ -254,7 +256,7 @@ async def user_info_cmd(ctx, user: discord.User = None):
 
 @bot.command(name='jtbz')
 async def jtbz_cmd(ctx):
-    await ctx.send("🚫 **Just Too Based!** 🚫")
+    await ctx.send(" **Just Too Based!** ")
 
 @bot.command(name='checkwebhook')
 async def check_webhook_cmd(ctx, webhook_url: str):
@@ -321,7 +323,7 @@ async def choose_option(ctx, *options):
         return
         
     choice = random.choice(options)
-    await ctx.send(f"🎯 I choose: {choice}")
+    await ctx.send(f" I choose: {choice}")
 
 @bot.group(name='config', invoke_without_command=True)
 async def config_group(ctx):
@@ -339,5 +341,7 @@ async def set_prefix(ctx, new_prefix):
 async def on_command_error(ctx, error):
     pass
 
-bot.run("YOUR_TOKEN_HERE")
-```
+bot.run("ADD YOUR TOKEN HERE MFS")
+
+# DM Slayerson for more help
+
