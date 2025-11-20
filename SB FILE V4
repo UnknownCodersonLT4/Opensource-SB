@@ -3,7 +3,7 @@
 #
 
 #
-# V4 All Issues Fixed -
+# V4 All Issues Fixed - 
 #
 
 import discord
@@ -50,6 +50,7 @@ async def custom_help(ctx):
 • `+delete <amount>` 
 • `+cleanconv @user` 
 • `+cn @user` 
+• `+say <message>` 
 
 **User Commands:**
 • `+userinfo @user` 
@@ -97,7 +98,7 @@ async def spam_cmd(ctx, *, message):
         try:
             while ctx.channel.id in spam_tasks:
                 await ctx.send(message)
-                await asyncio.sleep(0.010) 
+                await asyncio.sleep(0.1) 
         except Exception as e:
             print(f"Spam error: {e}")
         finally:
@@ -111,6 +112,14 @@ async def stop_spam(ctx):
     if ctx.channel.id in spam_tasks:
         spam_tasks[ctx.channel.id].cancel()
         spam_tasks.pop(ctx.channel.id)
+
+@bot.command(name='say')
+async def say_cmd(ctx, *, message):
+    try:
+        await ctx.message.delete()
+        await ctx.send(message)
+    except:
+        pass
 
 @bot.command(name='delete')
 async def delete_cmd(ctx, amount: int = 10):
