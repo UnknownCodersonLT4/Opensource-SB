@@ -1,0 +1,21 @@
+{
+  "name": "Slayerson-selfbott",
+  "version": "1.0.0",
+  "description": "Hey Bitches Why tf u on here huh??????.",
+  "main": "sb.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node sb.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "bufferutil": "^4.0.8",
+    "debug": "^4.3.7",
+    "discord.js-selfbot-v13": "^3.7.1",
+    "tslib": "^2.6.2",
+    "utf-8-validate": "^6.0.3",
+    "ws": "^8.17.1"
+  }
+}
